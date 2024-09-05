@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Ecommerce</title>
+    <script src="/src/js/app.js" defer> </script>
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    
+
+</head>
+<body>
+    
+<!-- header.html -->
+<header class="p-4 flex items-center justify-between max-w-[1200px] mx-auto text-lg font-bold uppercase text-black">
+
+    <div class="flex-none">
+        <img src="assets/img/logo.png" alt="Logo" class="h-[100px]">
+    </div>
+    
+
+    <nav class="flex-grow flex justify-center space-x-4">
+        <a href="index.html" class="">Inicio</a>
+        <a href="contacto.html" class="">Contacto</a>
+        <a href="nosotros.html" class="">Nosotros</a>
+    </nav>
+
+<div id="cartContainer" class="flex-none flex items-center space-x-2">
+    <span>Carrito</span>
+    <svg class="h-6 w-6 text-black" fill="none" stroke="#ccc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l3.6 7.59 1.35-2.4A1 1 0 0110.32 7h8.36a1 1 0 01.97 1.19l-1.12 5.62A1 1 0 0117.58 15H7a1 1 0 01-1-1v-1a1 1 0 011-1h10.31l1-5H8L5.27 6H3zM6 21a2 2 0 100-4 2 2 0 000 4zm12 0a2 2 0 100-4 2 2 0 000 4z"/>
+    </svg>
+    <span id="cartItemCount" class="text-lg text-black">(0)</span> 
+</div>
+
+
+
+</header>
+
+
+
+    <!-- Main content -->
+
+    <main class="flex flex-col items-center py-8">
+
+    <!-- Imagen Promocional -->
+    <div class="w-[1400px] h-[400px] bg-cover bg-center bg-no-repeat">
+        <img src="assets/img/banner.jpg" alt="Imagen Promocional" class="w-full h-full object-cover">
+    </div>
+
+
+    <div class="mt-8 w-[500px] flex items-center" id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Buscar..." class="w-full p-3 border border-gray-300 rounded-md">
+        <button id="searchButton" class="p-3 text-lg bg-blue-500 text-white rounded-md hover:bg-blue-600 ml-2 min-w-[150px]">
+            Buscar
+        </button>
+    </div>
+
+    
+    <!-- Sección de Productos -->
+
+    <section class="py-12">
+        
+        <!-- Título de la Galería -->
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold">Galería de Productos</h2>
+            <p class="text-lg text-gray-600">Explora nuestra colección de productos destacados.</p>
+
+         <!-- Botón para agregar un producto -->
+            <a href="product.html" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-md mt-4 hover:bg-blue-600">
+                Agregar Producto
+            </a>
+        </div>
+
+
+            <!-- Contenedor de Productos -->
+            <div id="productContainer" class="flex flex-wrap justify-center gap-6 max-w-[1200px]">
+                <!-- Los productos se agregarán dinámicamente aquí -->
+            </div>
+
+
+    </section>
+</main>
+
+
+
+<footer class="bg-gray-800 text-white py-2 mt-8 h-[100px]">
+    <div class="mx-auto text-center flex items-center justify-center h-full">
+        <p class="text-sm">&copy; 2024 Mini Ecommerce. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+</html>

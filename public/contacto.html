@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Ecommerce</title>
+    <script src="/src/js/app.js" defer></script>
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+</head>
+
+<body>
+    <!-- header.html -->
+    <header class="p-4 flex items-center justify-between max-w-[1200px] mx-auto text-lg font-bold uppercase text-black">
+
+  
+        <div class="flex-none">
+            <img src="assets/img/logo.png" alt="Logo" class="h-[100px]">
+        </div>
+       
+
+        <nav class="flex-grow flex justify-center space-x-4">
+            <a href="index.html" class="">Inicio</a>
+            <a href="contacto.html" class="">Contacto</a>
+            <a href="nosotros.html" class="">Nosotros</a>
+        </nav>
+   
+        
+    </header>
+
+
+<!-- Sección de Contacto -->
+<main class="max-w-[1200px] mx-auto p-4">
+
+    <section id="contacto" class="my-8">
+        
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+            <!-- Información de contacto -->
+            <div class="flex-1 md:mr-4">
+                <h1 class="text-3xl font-bold mb-4 uppercase">Datos de contacto</h1>
+                <p class="mb-2"><strong>Teléfono:</strong> +34 123 456 789</p>
+                <p class="mb-2"><strong>Email:</strong> contacto@miniecommerce.com</p>
+                <p><strong>Domicilio:</strong> Calle Falsa, Madrid, España</p>
+            </div>
+
+            <!-- Mapa -->
+            <div class="flex-1 flex items-center justify-center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-0.000000!3d0.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDIyJzM5LjAiTiAwN8KwNTQnMTYuMCJF!5e0!3m2!1sen!2suk!4v1234567890123"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <form action="#" method="post" class="bg-zinc-200 p-6 rounded-lg shadow-lg w-full max-w-md">
+                <h2 class="text-xl font-semibold mb-4 text-center">Envíanos tu consulta</h2>
+                
+                <label for="nombre" class="block mb-2">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required class="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Introduce tu nombre">
+                
+                <label for="email" class="block mb-2">Email:</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Introduce tu email">
+                
+                <label for="consulta" class="block mb-2">Consulta:</label>
+                <textarea id="consulta" name="consulta" rows="4" required class="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Introduce tu consulta"></textarea>
+                
+                <!-- Campo extra opcional -->
+                <label for="telefono" class="block mb-2">Teléfono (opcional):</label>
+                <input type="text" id="telefono" name="telefono" class="w-full p-2 border border-gray-300 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Introduce tu teléfono (opcional)">
+                
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Enviar</button>
+            </form>
+        </div>
+        
+    </section>
+</main>
+
+
+
+
+
+    <footer class="bg-gray-800 text-white py-4 mt-8 h-[100px]">
+        <div class="mx-auto text-center flex items-center justify-center h-full">
+            <p class="text-sm">&copy; 2024 Mini Ecommerce. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

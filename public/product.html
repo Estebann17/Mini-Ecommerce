@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Ecommerce</title>
+    <script src="/src/js/app.js" defer> </script>
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+        <!-- Incluye una biblioteca para notificaciones tipo toast, por ejemplo, Toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+</head>
+<body>
+    
+        <!-- header.html -->
+        <header class="p-4 flex items-center justify-between max-w-[1200px] mx-auto text-lg font-bold uppercase text-black">
+
+        
+            <div class="flex-none">
+                <img src="assets/img/logo.png" alt="Logo" class="h-[100px]">
+            </div>
+            
+          
+            <nav class="flex-grow flex justify-center space-x-4">
+                <a href="index.html" class="">Inicio</a>
+                <a href="contacto.html" class="">Contacto</a>
+                <a href="nosotros.html" class="">Nosotros</a>
+            </nav>
+
+            
+        </header>
+
+
+          <!-- Contenedor del formulario -->
+<div class="max-w-lg mx-auto bg-white p-8 border border-gray-300 rounded-lg mt-10 shadow-lg">
+    <h2 class="text-2xl font-bold mb-6">Agregar Nuevo Producto</h2>
+
+    <form id="productForm">
+        <div class="mb-4">
+            <label for="productName" class="block text-gray-700 font-bold mb-2">Nombre del Producto</label>
+            <input type="text" id="productName" name="nombre" class="w-full p-2 border border-gray-300 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+            <label for="productPrice" class="block text-gray-700 font-bold mb-2">Precio</label>
+            <input type="number" id="productPrice" name="precio" step="0.01" class="w-full p-2 border border-gray-300 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+            <label for="productStock" class="block text-gray-700 font-bold mb-2">Stock</label>
+            <input type="number" id="productStock" name="stock" class="w-full p-2 border border-gray-300 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+            <label for="productMarca" class="block text-gray-700 font-bold mb-2">Marca</label>
+            <input type="text" id="productMarca" name="marca" class="w-full p-2 border border-gray-300 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+            <label for="productCategory" class="block text-gray-700 font-bold mb-2">Categoría</label>
+            <input type="text" id="productCategory" name="categoria" class="w-full p-2 border border-gray-300 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+            <label for="productDesc" class="block text-gray-700 font-bold mb-2">Descripción</label>
+            <textarea id="productDesc" name="descripcion" class="w-full p-2 border border-gray-300 rounded-lg" required></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="productPhoto" class="block text-gray-700 font-bold mb-2">Fotografía del Producto</label>
+            <input type="file" id="productPhoto" name="imagen" accept="image/*" class="w-full p-2 border border-gray-300 rounded-lg" required>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600" id="saveButton">
+            Subir Producto
+        </button>
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
