@@ -684,6 +684,10 @@ body {
   height: 1.5rem;
 }
 
+.h-64{
+  height: 16rem;
+}
+
 .h-\[100px\]{
   height: 100px;
 }
@@ -694,10 +698,6 @@ body {
 
 .h-full{
   height: 100%;
-}
-
-.h-64{
-  height: 16rem;
 }
 
 .w-5{
@@ -826,6 +826,11 @@ body {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-gray-800{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
@@ -844,11 +849,6 @@ body {
 .bg-zinc-200{
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
-}
-
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -916,16 +916,6 @@ body {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .text-center{
