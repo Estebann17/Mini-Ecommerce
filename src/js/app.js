@@ -89,7 +89,7 @@ function displayProducts() {
         const productElement = document.createElement('div');
         productElement.className = 'w-[300px] bg-white border border-gray-300 rounded-lg overflow-hidden shadow-lg flex flex-col relative group';
 
-        const imageURL = `../public/assets/img/products/${product.image}`;
+        const imageURL = `/public/assets/img/products/${product.image}`;
 
         productElement.innerHTML = `
             <div class="relative">
